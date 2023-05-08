@@ -51,7 +51,7 @@ main {
   
   button:hover {
     background-color: #B75000;
-    
+  
   }
   
   .name {
@@ -63,10 +63,52 @@ main {
     color: #FFA07A;
     font-size: 25px;
   }
-
+  
   .test {
     font-size: 20px;
     color: #000000;
   }
+  
+  /* media queries for responsiveness */
+  @media screen and (max-width: 600px) {
+    button {
+      margin-top: 30px;
+      width: 150px;
+      font-size: 14px;
+    }
+  
+    .name, .country {
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+    header {
+    text-align: center;
+    }
+    
+    h1 {
+    font-size: 30px;
+    }
+    
+    button {
+    margin-top: 30px;
+    width: 150px;
+    padding: 10px 15px;
+    font-size: 14px;
+    }
+    
+    .name {
+    font-size: 20px;
+    }
+    
+    .country {
+    font-size: 20px;
+    }
+    
+    .test {
+    font-size: 16px;
+    }
+    }
   
   
